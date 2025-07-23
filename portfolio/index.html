@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop_nav"> 
+        <div class="logo">Hoang Van Linh</div>
+        <div>
+            <ul class="nav_link">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger_nav">
+        <div class="logo">Hoang Van Linh</div>
+        <div class="hamburger_menu">
+            <div class="hamburger_icon" onclick="toggleMenu()">
+                <!-- 3 đường kẻ trong phần Menu -->
+                <span></span> 
+                <span></span> 
+                <span></span>
+            </div>
+            <div class="menu_links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic_container">
+            <img src="./assets/about_pic1.png" alt="Hoang Van Linh profile pic">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello I'm</p>
+            <h1 class="title">Hoang Van Linh</h1>
+            <p class="section_text_p2">Intern Engineer</p>
+            <div class="btn_container">
+                <button class="btn btn_color_2" onclick="window.open('./assets/CV.pdf')">CV</button>
+                <button class="btn btn_color_1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="social_container">
+                <img src="./assets/icons8-facebook-512.png" alt="My FaceBook"
+                class="icon" onclick="location.href='https://www.facebook.com/linhhnil20303'">
+                <img src="./assets/icons8-github-512.png" alt="My Github"
+                class="icon" onclick="location.href='https://github.com/hoangvanlinh22'">
+                <img src="./assets/email.png" alt="My Email"
+                class="icon" onclick="location.href='mailto:hoangvanlinh2k3232@gmail.com'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section_container">
+            <div class="section_pic_container">
+                <img src="./assets/aou.jpg" alt="Profile Picture" class="about_pic">
+            </div>
+            <div class="about_detail_container">
+                <div class="about_container">
+                    <div class="detail_container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>+1 years <br>Design PCB Engineer</p>
+                    </div>
+                    <div class="detail_container">
+                        <img src="./assets/mortarboard.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Electrical-Telecommunication <br>GPA: 3.1/4 <br>TOEIC 590</p>
+                    </div>
+                </div>
+                <div class="text_container">
+                    <p>With a proactive, eager-to-learn, and forward-thinking mindset,
+                         I am seeking an internship opportunity to apply the knowledge 
+                         I have acquired in practice, while also improving my professional 
+                         skills and gaining real-world experience. 
+                         I believe that with my academic foundation and hands-on experience 
+                         from various projects, I can quickly adapt and make meaningful contributions
+                          to technical tasks within the company.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Next" class="icon arrow"
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+    <p class="section_text_p1"> Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience_detail_container">
+        <div class="about_container">
+            <div class="detail_container">
+                <h2 class="experience_sub_title">Embedded Development</h2>
+                <div class="article_container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience_icon" class="icon">
+                        <div>
+                            <h3>C/C++</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience_icon" class="icon">
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience_icon" class="icon">
+                        <div>
+                            <h3>STM32CubeIDE/ArduinoIDE <br>KeilC/VScode</h3>
+                            <p>Proficient</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience_icon" class="icon">
+                        <div>
+                            <h3>STM32/ESP32/Arduino...</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="detail_container">
+                <h2 class="experience_sub_title">Design PCB</h2>
+                <div class="article_container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience_icon" class="icon">
+                        <div>
+                            <h3>Altium Design</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience_icon" class="icon">
+                        <div>
+                            <h3>Advance Design System</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience_icon" class="icon">
+                        <div>
+                            <h3>UART/SPI/I2C/LORA/NRF...</h3>
+                            <p>Knowledge</p>
+                        </div>
+                    </article>             
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Next" class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience_detail_container">
+            <div class="about_container">
+                <div class="detail_container color_container">
+                    <div class="article_container">
+                        <img src="./assets/grizzz.jpg" alt="Project 1" class="project_img">
+                    </div>
+                    <h2 class="experience_sub_title project_title">Project 1: GateWay-MQTT</h2>
+                    <div class="btn_container">
+                        <button class="btn btn_color_2 project_btn" 
+                        onclick="location.href='https://github.com/hoangvanlinh22/GateWay-MQTT'">
+                        Github</button>
+                    </div>
+                </div>
+                <div class="detail_container color_container">
+                    <div class="article_container">
+                        <img src="./assets/pada.jpg" alt="Project 2" class="project_img">
+                    </div>
+                    <h2 class="experience_sub_title project_title">Project 2: Water Quality Monitoring</h2>
+                    <div class="btn_container">
+                        <button class="btn btn_color_2 project_btn" 
+                        onclick="location.href='https://github.com/hoangvanlinh22/Water-quality-monitoring'">
+                        Github</button>
+                    </div>
+                </div>
+                <div class="detail_container color_container">
+                    <div class="article_container">
+                        <img src="./assets/whitebear.jpg" alt="Project 3" class="project_img">
+                    </div>
+                    <h2 class="experience_sub_title project_title">Project 3: Low Noise Amplifier </h2>
+                    <div class="btn_container">
+                        <button class="btn btn_color_2 project_btn" 
+                        onclick="location.href='https://github.com/hoangvanlinh22/Water-quality-monitoring'">
+                        Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Next" class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="contact">
+        <p class="section_text_p1"> Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact_info_upper_container">
+            <div class="contact_info_container">
+                <img src="./assets/email.png" alt="email_icon" class="icon contact_icon email_icon">
+                <p><a href="mailto:hoangvanlinh2k3232@gmail.com">Email</a></p>
+            </div>
+            <div class="contact_info_container">
+                <img src="./assets/icons8-facebook-512.png" alt="facebook" class="icon contact_icon">
+                <p><a href="https://www.facebook.com/linhhnil20303">FaceBook</a></p>
+            </div>
+            <div class="contact_info_container">
+                <img src="./assets/phone-call.png" alt="phone" class="icon contact_icon">
+                <p><a href="tel:+84865557933">0865557933</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav_link_container">
+                <ul class="nav_link">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Hoang Van Linh. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
